@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import domein.Application;
 import domein.ApplicationFactory;
+import domein.DrawingDocument;
+import domein.StatisticsDocument;
 
 public class TestApplication {
 

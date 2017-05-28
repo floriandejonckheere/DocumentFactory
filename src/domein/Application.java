@@ -5,12 +5,12 @@ import java.util.Map;
 
 //CREATOR
 //TODO
-public class Application {
+public abstract class Application {
 
     private final Map<String, Document> documents = new HashMap<>();
 
     public void addNewDocument(String name) {
-        // TODO
+        documents.put(name, createDocument());
     }
 
     public Document getDocument(String name) {
@@ -20,4 +20,6 @@ public class Application {
     public Document removeDocument(String name) {
         return documents.remove(name);
     }
+    
+    protected abstract Document createDocument();
 }
